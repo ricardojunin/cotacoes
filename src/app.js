@@ -29,6 +29,13 @@ app.get('',(req, res)=>{
     });
 });
 
+app.get('/',(req, res)=>{
+    res.render('index', {
+        titulo : 'Conteúdo dinâmico',
+        autor : 'João Ricardo de Oliveira Alves'
+    });
+});
+
 app.get('/about',(req, res)=>{
     res.render('about', {
         titulo : 'Sobre',
